@@ -3,64 +3,55 @@
 */
 
 
-*{
+* {
     box-sizing: border-box;
 }
 
-/*
-    Html Selectors
-    
-*/
-
-header{
+/* ------ HTML Selectors ------ */
+header {
     position: relative;
     height: 200px;
     background-color: aqua;
 }
 
-nav{
+nav {
     position: absolute;
     top: 80px;
-    
     height: 100px;
     width: 100%;
     background-color: black;
 }
 
-main{
+main {
     position: relative;
     min-height: calc(100vh - 300px);
     background-color: bisque;
 }
 
-footer{
+footer {
     height: 100px;
     background-color: chocolate;
 }
 
-/*
-    Class Selectors
-*/
+/* ------ Class Selectors ------ */
 
-.lecture-container{
-    
+.lecture-container {
     display: block;
     margin-left: 20%;
     margin-right: 20%;
-    height: 400px;    
+    height: 400px;
     background-color: blueviolet;
     padding: 35px;
     min-width: 1141px;
-    
 }
 
-.lecture{
+.lecture {
     position: relative;
     margin: 0px 16px;
     float: left;
     height: 325px;
     width: 325px;
     background-color: crimson;
-    
 }
 
+/* ------ ID's Selectors ------ */
