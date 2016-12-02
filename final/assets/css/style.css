@@ -37,20 +37,20 @@ footer {
 
 .lecture-container {
     display: block;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 50px;
+    margin-right: 50px;
     height: 400px;
     background-color: blueviolet;
     padding: 35px;
-    min-width: 1141px;
+    min-width: 70%;
 }
 
 .lecture {
     position: relative;
-    margin: 0px 16px;
+    margin: 0px 20px;
     float: left;
-    height: 325px;
-    width: 325px;
+    height: 330px;
+    width: 330px;
     background-color: crimson;
 }
 
