@@ -41,7 +41,7 @@ footer {
     margin-right: auto;
     width: 30%;
     height: 400px;
-    background-color: #FFF;
+    background-color: #f3f3f3;
     padding: 35px;
     min-width: 1180px;
 }
@@ -52,7 +52,9 @@ footer {
     float: left;
     height: 330px;
     width: 330px;
-    background-color: crimson;
+    -webkit-box-shadow: 10px 10px 16px -6px rgba(125,125,125,1);
+    -moz-box-shadow: 10px 10px 16px -6px rgba(125,125,125,1);
+    box-shadow: 10px 10px 16px -6px rgba(125,125,125,1);
 }
 
 /* ------ ID's Selectors ------ */
