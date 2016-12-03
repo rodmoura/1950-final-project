@@ -22,10 +22,18 @@ nav {
     background-color: black;
 }
 
+h1{
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+}
+
 main {
     position: relative;
     min-height: calc(100vh - 300px);
-    background-color: bisque;
+    background-color: #f3f3f3;
 }
 
 footer {
@@ -54,6 +62,14 @@ footer {
     width: 330px;
     -webkit-box-shadow: 10px 10px 16px -6px rgba(125,125,125,1);
     -moz-box-shadow: 10px 10px 16px -6px rgba(125,125,125,1);
+    box-shadow: 10px 10px 16px -6px rgba(125,125,125,1);
+    transition: all .3s ease;
+}
+
+.lecture:hover img{
+    
+    height: 340px;
+    width: 340px;
     box-shadow: 10px 10px 16px -6px rgba(125,125,125,1);
 }
 
