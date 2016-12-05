@@ -1,5 +1,9 @@
 /*
     style.css
+    Authors:
+        Blake Sadoway
+        Rodrigo Moura
+        Paulo Leao
 */
 
 
@@ -11,22 +15,56 @@
 header {
     position: relative;
     height: 200px;
-    background-color: aqua;
+    background-color: #abc9ed;
 }
 
+
+/* Start navigation styling */
 nav {
     position: absolute;
     top: 80px;
     height: 100px;
     width: 100%;
-    background-color: black;
+    background-color: #2f8eed;
 }
 
+nav ul ul {
+	display: none;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul{
+    background: #efefef; 
+    padding: 0 20px; 
+	list-style: none;
+	position: relative;
+	display: inline-table;
+}
+
+nav ul:after {
+	content: ""; 
+    clear: both; 
+    display: block;
+}
+
+nav ul li{
+    padding: 20px;
+    float:left; 
+}
+
+nav ul ul li {
+		float: none; 
+		position: relative;
+}
+		
 h1{
     margin: 0;
     text-align: center;
     padding: 20px;
-    font-size: 3em;
+    font-size: 2em;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -38,7 +76,7 @@ main {
 
 footer {
     height: 100px;
-    background-color: chocolate;
+    background-color: #abc9ed;
 }
 
 /* ------ Class Selectors ------ */
@@ -73,7 +111,7 @@ footer {
 }
 
 .lecture ul{
-    list-style-type: none;    
+      
     position: absolute;
     top: 235px;
 }
@@ -87,9 +125,6 @@ footer {
     text-decoration: none;    
 }
 
-
-.lecture:hover{
-    opacity: .7;
-}
-
 /* ------ ID's Selectors ------ */
+
+
