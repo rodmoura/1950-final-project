@@ -24,7 +24,7 @@ h1{
     margin: 0;
     text-align: center;
     padding: 20px;
-    font-size: 3em;
+    font-size: 2em;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -170,12 +170,6 @@ div[class^="header-"]{
     text-decoration: none;    
 }
 
-
-.lecture:hover{
-    opacity: .7;
-}
-
-
 /* Footer - by Paulo Leao*/
 
 .footer-container *{
@@ -191,8 +185,6 @@ div[class^="header-"]{
 
 .footer-social-network{
     display: inline-block;
-
-
 }
 
 .footer-menu{
