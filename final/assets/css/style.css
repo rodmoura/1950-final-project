@@ -63,14 +63,33 @@ footer {
     -webkit-box-shadow: 10px 10px 16px -6px rgba(125,125,125,1);
     -moz-box-shadow: 10px 10px 16px -6px rgba(125,125,125,1);
     box-shadow: 10px 10px 16px -6px rgba(125,125,125,1);
-    transition: all .3s ease;
+    
 }
 
-.lecture:hover img{
-    
-    height: 340px;
-    width: 340px;
-    box-shadow: 10px 10px 16px -6px rgba(125,125,125,1);
+.lecture h2{
+    position: absolute;
+    top: 175px;
+    margin-left: 25px;
+}
+
+.lecture ul{
+    list-style-type: none;    
+    position: absolute;
+    top: 235px;
+}
+
+.lecture li{
+    font-size: .9em;
+}
+
+.lecture li, a{
+    color: #000;
+    text-decoration: none;    
+}
+
+
+.lecture:hover{
+    opacity: .7;
 }
 
 /* ------ ID's Selectors ------ */
