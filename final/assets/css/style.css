@@ -8,6 +8,12 @@
 }
 
 /* ------ HTML Selectors ------ */
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+}
+
 header {
     position: relative;
     height: 200px;
@@ -24,14 +30,34 @@ h1{
     margin: 0;
     text-align: center;
     padding: 20px;
-    font-size: 3em;
+    font-size: 2em;
+}
+
+h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
+    color: #2F8EED;
 }
 
 main {
     position: relative;
     min-height: calc(100vh - 300px);
     background-color: #f3f3f3;
+}
+
+section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;  
+}
+
+section a {
+    color: #2F8EED;
+    text-decoration: none;
+}
+
+section a:hover {
+    text-decoration: underline;
 }
 
 footer {
@@ -200,11 +226,28 @@ div[class^="header-"]{
     text-decoration: none;    
 }
 
+/* Coding style */
 
-.lecture:hover{
-    opacity: .7;
+.code-syntax {
+    background-color: #F7F7F7;                
+    padding: 8px;
+} 
+
+.code-tag {
+    color: #A52A2A;
 }
 
+.code-property {
+    color: #FF004F;
+}            
+
+.code-value {
+    color: #0000CD;;
+}
+
+.code-comment {
+    color: #666666;
+}
 
 /* Footer - by Paulo Leao*/
 
@@ -221,8 +264,6 @@ div[class^="header-"]{
 
 .footer-social-network{
     display: inline-block;
-
-
 }
 
 .footer-menu{
