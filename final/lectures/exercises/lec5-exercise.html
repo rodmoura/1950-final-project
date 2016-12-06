@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Comp 1950 | Lecture 5 - Responsive Design</title>
+        <meta name="description" content="Responsive Design - Comp 1950">
+        <link rel="stylesheet" href="/students/bsadoway/final/assets/css/group-style.css">
+        
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        
+        <!-- JavaScript -->
+        <script src="/students/bsadoway/final/assets/js/jquery-3.1.1.min.js"></script>
+        <script src="/students/bsadoway/final/assets/js/smooth-scrolling.js"></script>
+
+        <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <header>
+            <!-- Navigation bar -->
+            <!--#include virtual="/students/bsadoway/final/includes/nav.html" -->
+        </header>
+
+        <main>
+            <h1>Lecture 5 - Exercises and Homework</h1>
+            
+            <section id="exercises">
+                <h2>Exercises</h2>
+                
+                <article>
+                    <h3>Print Styles</h3>
+                    
+                    <ul>
+                        <li><a href="#">Download the exercise starting files</a></li>
+                        <li>Apply a printer friendly CSS stylesheet using <code><span class="code-property">media</span>=<span class="code-value">"print"</span></code> in the link tag</li>
+                        <li>Style a printer appropriate stylesheet:
+                            <ul>
+                                <li>Hide parts of the page of no use to a printout (eg: site navigation)</li>
+                                <li>Every time a new <strong>section</strong> occurs, start a new page</li>
+                                <li>If needed, re-position content appropriately: avoid using <strong>float</strong></li>
+                                <li>Display the full text URL of hyperlinks</li>
+                                <li>For an additional challenge, use attribute selectors to only output the text URL of hyperlinks that are absolute, don't bother for relative links (since they aren't much use to the printout)</li>
+                            </ul>
+                        </li>
+                        <li>Use your browser's "Print Preview" to test the styles (no need to actually print)</li>
+                        <li><a href="#">Download a sample solution</a></li>
+                    </ul>
+                </article>
+                
+                <article>
+                    <h3>Media Queries</h3>
+                    
+                    <ul>
+                        <li><a href="#">Download a media query example</a> and unzip the contents</li>
+                        <li>Examine the CSS, and test the HTML in a varying sized browser</li>
+                        <li>Add 2 new media queries after the ones already declared. Use them to determine the <code>min-height/max-height</code> of the viewport and hide (with <code><span class="code-property">display</span>:<span class="code-value">none</span>;</code>) one of the two spans 
+                            <code>#tall</code> or <code>#short</code></li>
+                        <li>Copy the first media query rule (the one that applies to small screens) and paste it at the 
+                            end of all the media queries, so that it is the last of the media queries. How does this 
+                            change the browser behavior? What kind of compound media query could fix this?</li>
+                        <li>Investigate the <strong>orientation</strong> feature, and add similar functionality to 
+                            demonstrate you can detect the difference between <strong>portrait</strong> and 
+                            <strong>landscape</strong></li>
+                        <li>
+                        <a href="#">Download a sample solution</a></li>
+                    </ul>
+                </article>
+                
+                <article>
+                    <h3>Responsive Layout</h3>
+                    
+                    <ul>
+                        <li><a href="#"> Download the exercise</a> and unzip the contents</li>
+                        <li>Examine the code and note how media queries are already being applied at a <code>800px</code> 
+                            width breakpoint</li>
+                        <li>If the page is wider than 800px then you want to use the current layout, but if it is less 
+                            than 800px wide, apply a fluid, one column stacked layout: header at top, then vertical 
+                            navigation, then content</li>
+                        <li>Ensure fonts and images scale fluidly</li>
+                        <li>Test your layout in a varying sized browser</li>
+                        <li>If you own a smartphone or tablet, try uploading your files to your students webspace on 
+                            <strong>bcitcomp.ca</strong> and see what it looks like when browsing on the smaller 
+                            devices</li>
+                        <li><a href="#">Download a sample solution</a></li>
+                    </ul>
+                </article>                
+            </section>
+            
+            <section id="homework">
+                <h2>Homework #5</h2>
+                <article>
+                    <h3>Info</h3>
+                    
+                    <ul>
+                        <li>Due date: Midnight before session #7 (there will be no new homework session #6)</li>
+                        <li>Worth twice as much as other homework assignments</li>                    
+                        <li><a href="#">Homework instructions (PDF)</a></li>
+                    </ul>
+                </article>            
+            </section>
+            
+        </main>
+
+        <!-- Footer -->
+        <!--#include virtual="/students/bsadoway/final/includes/footer.html" -->
+
+    </body>
+    
+</html>
