@@ -275,7 +275,7 @@ div[class^="header-"]{
 .footer-container{
     width: 100%;
     background:rgba(4,78,140,1);
-        text-align: center;
+    text-align: center;
 }
 
 .footer-social-network{
@@ -298,7 +298,7 @@ div[class^="header-"]{
 
 /*Sprite Configuration*/
 .social-icons {
-    background-image:url(/assets/images/spritesheet.png);
+    background-image:url(/students/bsadoway/final/assets/images/spritesheet.png);
     background-repeat: no-repeat;
     display: inline-block;
     vertical-align:middle;
