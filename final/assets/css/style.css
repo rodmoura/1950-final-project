@@ -259,31 +259,25 @@ div[class^="header-"]{
 
 .about{
     width: 80%;
-    margin: 20px auto;
-    padding: 0 30px;
-    
-    
+    margin: 0 auto;
+    padding: 0 30px;        
 }
 
 .about-course-goals > li{
     padding: 4px 0;
-    
 }
 
 .about-course-outcomes > li{
     padding: 4px 0;
-    
 }
 
 .about-evaluation-table{
-
     min-width: 600px;
 }
 
 .about-evaluation-table-header{
     min-width: 200px;
     margin: 0px;
-    
 }
 
 .about-evaluation-table-header > th{
@@ -296,8 +290,6 @@ div[class^="header-"]{
 .about-evaluation-table-datarow > td{
     padding: 10px 30px;
 }
-
-
 
 /* Footer - by Paulo Leao*/
 
