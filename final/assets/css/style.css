@@ -133,7 +133,6 @@ div[class^="header-"]{
     
 
 .nav-menulist.disabled{
-   pointer-events: none;
    cursor: default;
 }
 
