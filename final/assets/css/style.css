@@ -26,6 +26,11 @@ nav {
     background:rgba(4,78,140,1);
 }
 
+nav ul li a{
+    display:block;
+    padding: 20px 70px;
+}
+
 h1{
     margin: 0;
     text-align: center;
@@ -117,7 +122,7 @@ div[class^="header-"]{
 
 .nav-menulist{
     display: inline-block;
-    padding: 20px 70px;
+    /*padding: 20px 70px;*/
     margin: 0 -3px;
 }
 
