@@ -1,0 +1,37 @@
+/* -------------------- CSS to Print the page --------------------*/
+
+@media only print {
+
+    html, body, main, section, article, .about, .lecture-container {
+        float: none;
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+        width: auto;
+        background: #FFFFFF;
+        background-color: #FFFFFF;
+        font-family: 'Verdana', sans-serif;
+        font-size: 14px;
+    }
+    
+    h1, h2, h3 {
+        font-family: 'Verdana', sans-serif;
+    }
+    
+    header, footer {
+        display: none;
+    }
+        
+    h2, h3 {
+        page-break-after: avoid;
+    }
+
+    section {
+        page-break-before: auto;
+    }
+    
+    a[href^="http"]:link:after, a[href^="http"]:visited:after {
+        content: " [URL: " attr(href) "]";
+    }
+    
+}
