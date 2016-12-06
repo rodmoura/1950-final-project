@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Comp 1950 | Lecture 5 - Responsive Design</title>
+        <meta name="description" content="Responsive Design - Comp 1950">
+        <link rel="stylesheet" href="/students/bsadoway/final/assets/css/group-style.css">
+        
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        
+        <!-- JavaScript -->
+        <script src="/students/bsadoway/final/assets/js/jquery-3.1.1.min.js"></script>
+        <script src="/students/bsadoway/final/assets/js/smooth-scrolling.js"></script>
+
+        <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <header>
+            <!-- Navigation bar -->
+            <!--#include virtual="/students/bsadoway/final/includes/nav.html" -->
+        </header>
+
+        <main>
+            <h1>Lecture 5 - Responsive Design</h1>
+
+            <section id="agenda">
+                <h2>Agenda</h2>
+                <ul>                    
+                    <li><a href="#print-media">Print media</a></li>
+                    <li><a href="#media-queries">Media queries</a></li>
+                    <li><a href="#responsive-design">Responsive design</a></li>
+                </ul>
+            </section>
+            
+            <section id="content">
+                <h2>Styling For Printers</h2>
+                
+                <article id="print-media">
+                    <h3>Applying Printer Styles</h3>
+                    <p>When linking to your CSS, using <code><span class="code-property">media</span>=<span class="code-value">"print"</span></code> will allow printer friendly styles to be applied. If you wanted the printer styles to inherit your default styles, use <code><span class="code-property">media</span>=<span class="code-value">"all"</span></code> with the default stylesheets:</p>
+                    
+                    <div class="code-syntax">
+                        <code><span class="code-comment">&lt;!-- This will apply both stylesheets to the printout --></span><br>
+                        &lt;link <span class="code-property">rel</span>=<span class="code-value">"stylesheet"</span> <span class="code-property">href</span>=<span class="code-value">"default_styles.css"</span> <span class="code-property">media</span>=<span class="code-value">"all"</span>/><br>
+                        &lt;link <span class="code-property">rel</span>=<span class="code-value">"stylesheet"</span> <span class="code-property">href</span>=<span class="code-value">"print_styles.css"</span> <span class="code-property">media</span>=<span class="code-value">"print"</span>/></code>
+                    </div>
+                    
+                    <p>To ensure your default styles wont also be applied to the printer (usually the best option), add 
+                    <code><span class="code-property">media</span>=<span class="code-value">"screen"</span></code> to the 
+                    any stylesheets that are not to be used when printing:</p>
+                    
+                    <div class="code-syntax">
+                        <code><span class="code-comment">&lt;!-- This will apply ONLY the print_styles.css to the printout --></span><br>
+                        &lt;link <span class="code-property">rel</span>=<span class="code-value">"stylesheet"</span> <span class="code-property">href</span>=<span class="code-value">"default_styles.css"</span> <span class="code-property">media</span>=<span class="code-value">"screen"</span>/><br>
+                        &lt;link <span class="code-property">rel</span>=<span class="code-value">"stylesheet"</span> <span class="code-property">href</span>=<span class="code-value">"print_styles.css"</span> <span class="code-property">media</span>=<span class="code-value">"print"</span>/></code>
+                    </div>
+                    
+                    <p>Instead of defining a new link tag, you can alternatively apply a printer styles in an external CSS file, using a media query.</p>
+
+                    <div class="code-syntax"><code>
+                        <span class="code-comment">/* styles for screens */</span><br>
+                        <span class="code-tag">@media screen</span> {<br>
+                        &nbsp;&nbsp;<span class="code-property">header</span> { <span class="code-value">color:red;</span> }<br>
+                        }
+                        <br><br>
+                        <span class="code-comment">/* styles for printers */</span><br>
+                        <span class="code-tag">@media print</span> {<br>
+                        &nbsp;&nbsp;<span class="code-property">header</span> { <span class="code-value">display:none;</span> }<br>
+                        }</code>
+                    </div>                    
+                </article>
+                
+                <article>
+                    <h3>Best Practices For Printable Styles</h3>
+                    <p>The key to a stylesheet specifically for printing is a matter of planning more than anything.</p>
+                    <p>You'll need a few things prepared before you can begin:</p>                    
+                    <ul>
+                        <li>A layout that is separated by divs, or if using HTML5, semantic tags (header, nav, etc.) are also used to separate page content</li>
+                        <li>Semantic markup including several summary headings</li>
+                        <li>Knowing what areas you want printed and what you don't</li>
+                        <li>Organized content so that printable areas are not nested in non-printable ones</li>
+                        <li>A recognition of why users will print pages. Generally, a website is printed because the user requires a hard copy of the site information, and not because of the visually pleasing way in which that information is presented. Thus print styles should focus on presenting critical information (eg: most page textual content, images crucial to page content) and either hide or reduce less useful content (eg: navigation bars, background images, light/subtle colour schemes)
+                        </li>                        
+                    </ul>
+                    
+                    <p>How to build your page. Make sure you have separate div elements for:</p>                    
+                    <ul>
+                        <li>each content section you want printed</li>
+                        <li>page elements that represent titles or headers</li>
+                        <li>other printable elements (footers)</li>
+                        <li>non-printing elements (navigation/sidebars/header images/backgrounds)</li>
+                    </ul>
+                    
+                    <p>Once you have planned your layout and created distinct elements, the next steps are to:</p>
+                    <ol>
+                        <li>Hide the elements you don't want the printer to see</li>
+                        <li>Re-style the layout</li>
+                        <li>Re-style the visuals</li>
+                        <li>Add textual hyperlink data to anchor elements, optionally also swapping images</li>
+                    </ol>
+                </article>            
+                
+                <article>
+                    <h3>Hiding Elements</h3>
+                    <p>Hide the elements you don't want printed. This should include any regions of the page that provide 
+                       no value to a printout. This may or may not include:</p>
+                    <ul>
+                        <li>navigation links, navigation bars</li>
+                        <li>headers</li>
+                        <li>footers</li>
+                        <li>background images</li>
+                        <li>any areas that require user interaction, eg: search fields, login forms, etc</li>
+                        <li>side bars, advertisements, banner images</li>
+                    </ul>
+                    
+                    <p>Use <code><span class="code-property">display</span>:<span class="code-value">none</span>;</code> 
+                    to tell the printer to ignore any of the elements listed in the declaration. Be careful to make 
+                    sure that none of the elements that are ignored have valuable info in them.</p>
+                    
+                    <div class="code-syntax"><code><span class="code-tag">header, nav, .site_map_link, #search_form 
+                        </span>{ <br>
+                        &nbsp;&nbsp;<span class="code-property">display</span>: <span class="code-value">none</span>; <br>
+                        }</code>                    
+                    </div>
+                </article>
+                
+                <article id="media-queries">
+                    <h3>Media Queries</h3>
+                    <p>Media Queries have become very popular lately with the rise of mobile browsing on both phones, 
+                    tablets and other devices. You can find a considerable amount of information at the W3C's site for 
+                    <a href="http://www.w3.org/TR/css3-mediaqueries/" target="_blank">CSS Media Queries</a>. The advanced 
+                    media queries discussed here are largely CSS3, so consulting the <a href="http://caniuse.com/css-mediaqueries" target="_blank">Media Queries Browser Support Chart</a> can help you decide if your user's browser will be able to take advantage.</p>
+                    
+                    <p>Media Queries are just one part of Responsive Web Design, but they are a very important part. The 
+                    concept is fairly simple: Use <code class="code-tag">@media</code> declarations to target device size 
+                    and/or orientation using CSS.</p>
+                    
+                    <p>Because you have already created print stylesheets, you've used the concept! It's fundamentally the 
+                    same idea, but instead of targeting a specific type of media, you will be targeting a specific 
+                    size.</p>
+                </article>
+                
+                <article id="responsive-design">
+                    <h3>Responsive Design</h3>
+                    <p>The ability to target specific device widths and orientations has made it possible to create 
+                    "Responsive" web designs. <a href="http://ethanmarcotte.com/" target="_blank">Ethan Marcotte</a> wrote 
+                    one of the very first articles on <a href="http://www.alistapart.com/articles/responsive-web-design/" target="_blank"> Responsive Web Design</a> in 2010, and the idea has taken off since then.</p>
+                    
+                    <p>Using media queries to deliver client specific styles opens up serveral possibilities for the web 
+                    developer. Some guidelines for taking advantage of the abilities and limitations of client devices:
+                    </p>
+                    
+                    <ul>
+                        <li>For small devices, design a one column layout</li>
+                        <li>Stack information in order of importance to the user. Start with an optional header, then a 
+                            vertical navigation, followed by critical content, ordered by importance. In small devices 
+                            there often isn't enough space to place all crucial content 'above the fold', so don't feel 
+                            compelled to try</li>
+                        <li>Due to the dramatically different capabilities of clients, responsive web design is most 
+                            effective with content driven sites as opposed to feature driven sites</li>
+                        <li>Dont try to design for specific devices: there are too many, and new different sized devices 
+                            are appearing all the time. Fluid layouts will adapt more effectively to various device widths.</li>
+                        <li>Apply media queries at the breakpoints whererever you can see your layout does not display 
+                            optimally</li>
+                    </ul>
+                </article>
+            </section>
+                        
+            <section id="summary">
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <!--#include virtual="/students/bsadoway/final/includes/footer.html" -->
+
+    </body>
+    
+</html>
