@@ -254,6 +254,17 @@ div[class^="header-"]{
     color: #666666;
 }
 
+
+/* About - by Paulo Leao*/
+
+.about{
+    width: 80%;
+    margin: auto;
+    padding: 0 3le0px;
+    
+}
+
+
 /* Footer - by Paulo Leao*/
 
 .footer-container *{
