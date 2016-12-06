@@ -261,7 +261,9 @@ div[class^="header-"]{
 .about{
     width: 80%;
     margin: 0 auto;
-    padding: 0 30px;        
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
 }
 
 .about-course-goals > li{
