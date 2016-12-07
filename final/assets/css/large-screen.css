@@ -8,6 +8,10 @@
     .nav-menulist{
         display: none;
     }
+    
+     .nav-menulist a{
+        font-size: 2em;
+    }
 
     .dropdown{
         display:inline-block;
