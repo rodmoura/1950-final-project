@@ -16,12 +16,11 @@ html, body {
 
 header {
     position: relative;
-    height: 200px;
+    height: 78px;
     /*background-color: aqua;*/
 }
 
 nav {
-    position: absolute;
     width: 100%;
     background:rgba(4,78,140,1);
 }
@@ -85,7 +84,7 @@ div[class^="header-"]{
 .header-logo{
     text-align: center;
     width: 10%;
-    padding: 1em;
+    padding: 1.2em;
     font-size: 1.5em;
     background-color:rgba(16, 97, 166, 1);
     color: white;
@@ -115,6 +114,11 @@ div[class^="header-"]{
 }
 
 /* ------ Navigation ------ */
+
+.nav-alternative{
+    display: none;
+    }
+
 .nav-menu{
     margin: auto;
     text-align: center;
@@ -359,3 +363,52 @@ div[class^="header-"]{
 
 
 /* ------ ID's Selectors ------ */
+
+/* Media Queries
+https://responsivedesign.is/develop/browser-feature-support/media-queries-for-common-device-breakpoints
+*/
+
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+
+    
+    
+}
+
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+/* Styles */
+}
+
+
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1200px) {
+    
+
+    header, footer{
+        display: none;
+    }
+    
+    .nav-regular{
+        display: none;
+    }
+    
+    .nav-alternative{
+        display: block;
+    }
+
+    .nav-alternative ul li{
+        display: none;
+    }
+
+    .nav-alternative .dropdown{
+        display:block;
+        width: 10%;
+    }
+
+}
+
+
