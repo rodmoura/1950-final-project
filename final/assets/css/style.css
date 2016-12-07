@@ -181,7 +181,6 @@ div[class^="header-"]{
     display: block;
 }
 
-
 .lecture-exit{
     visibility: hidden;
 }
@@ -321,6 +320,10 @@ div[class^="header-"]{
     display: inline-block;
     list-style: none;
     margin: 0 20px;
+}
+
+.footer-menulist a:hover{
+    color: rgb(56, 142, 214);
 }
 
 .footer-copyright{
