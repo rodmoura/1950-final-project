@@ -15,9 +15,13 @@ html, body {
 }
 
 header {
+<<<<<<< HEAD
     position: relative;
     height: 78px;
     /*background-color: aqua;*/
+=======
+    height: 150px;    
+>>>>>>> 03a7c4123eb646c999ebfdd17f8c1648213eb138
 }
 
 nav {
@@ -44,7 +48,7 @@ h1, h2, h3 {
 
 main {
     position: relative;
-    min-height: calc(100vh - 300px);
+    min-height: calc(100vh - 307px);
     background-color: #f3f3f3;
 }
 
@@ -67,7 +71,6 @@ section a:hover {
 
 footer {
     height: 100px;
-    background-color: chocolate;
 }
 
 /* ------ Class Selectors ------ */
@@ -103,9 +106,10 @@ div[class^="header-"]{
 
 .header-tile{
     text-align: center;
-    width: 76%;
-    padding: 1em;
-    font-size: 1.5em;    
+    width: 80%;
+    padding: 20px;
+    font-size: 1.8em;
+    color: #2F8EED;
 }
 
 .header-webComponents img{
@@ -125,9 +129,8 @@ div[class^="header-"]{
 }
 
 
-.nav-menulist{
+.nav-menulist {
     display: inline-block;
-    /*padding: 20px 70px;*/
     margin: 0 -3px;
 }
 
@@ -170,7 +173,7 @@ div[class^="header-"]{
 
 .dropdown-content a {
     color: black;
-        padding: 12px 40px;
+    padding: 12px 40px;
     text-decoration: none;
     display: block;
     text-align: left;
