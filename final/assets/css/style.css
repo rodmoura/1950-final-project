@@ -168,7 +168,7 @@ div[class^="header-"] {
 }
 
 .dropdown-content a {
-    color: black;
+    color: #000000;
     padding: 12px 40px;
     text-decoration: none;
     display: block;
