@@ -42,7 +42,6 @@ h1, h2, h3 {
 }
 
 main {
-    position: relative;
     min-height: calc(100vh - 236px);
     background-color: #f3f3f3;
 }
