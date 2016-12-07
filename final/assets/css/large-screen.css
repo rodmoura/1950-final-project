@@ -1,0 +1,21 @@
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+    
+    header, footer{
+        display: none;
+    }
+    
+    .nav-menulist{
+        display: none;
+    }
+
+    .dropdown{
+        display:inline-block;
+    }
+    
+    .lecture-exit{
+        display:inline-block;
+        visibility:visible;
+    }
+
+}
