@@ -361,7 +361,7 @@ div[class^="header-"]{
 /* ------ Profile style ------*/
 
 
-.profiles-header{
+.ir-header{
     text-align: center;
 }
 
@@ -380,6 +380,7 @@ div[class^="header-"]{
 
 .profiles li img{
     border-radius: 50%;
+    box-shadow: 10px 10px 21px -12px rgba(0,0,0,0.75);
 }
 
 .profiles figcaption{
@@ -391,3 +392,7 @@ div[class^="header-"]{
 }
 
 /* ------ ID's Selectors ------ */
+
+#introduction-div{
+    height: 700px;
+}
