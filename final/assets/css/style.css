@@ -400,3 +400,7 @@ div[class^="header-"]{
 #introduction-div{
     height: 600px;
 }
+
+#rationale-div{
+    height: 600px;
+}
