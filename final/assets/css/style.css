@@ -73,12 +73,12 @@ footer {
 /* ------ Header / Navigation Section - Beginnig ------ */
 
 /* ------ Header ------ */
-div[class^="header-"]{
+div[class^="header-"] {
     display: inline-block;
     vertical-align: top;
 }
 
-.header-logo{
+.header-logo {
     text-align: center;
     width: 10%;
     padding: 1.2em;
@@ -88,7 +88,7 @@ div[class^="header-"]{
     font-weight: bolder;
 }
 
-.header-arrow{
+.header-arrow {
     margin: 0;
     width: 0;
     height: 0;
@@ -98,7 +98,7 @@ div[class^="header-"]{
     margin-left: -5px;
 }
 
-.header-tile{
+.header-tile {
     text-align: center;
     width: 73%;
     padding: 20px 0px;
@@ -106,7 +106,7 @@ div[class^="header-"]{
     color: #044E8C;
 }
 
-.header-webComponents img{
+.header-webComponents img {
     display: block;
     padding: 2px 0px;
     margin: 0 auto;    
@@ -114,50 +114,48 @@ div[class^="header-"]{
 
 /* ------ Navigation ------ */
 
-.nav-alternative{
+.nav-alternative {
     display: none;
-    }
+}
 
 .nav-menu{
     margin: auto;
     text-align: center;
 }
 
-
 .nav-menulist {
     display: inline-block;
     margin: 0 -3px;
 }
 
-.nav-menulist:hover{
+.nav-menulist:hover {
     background-color: #0263B5;
 }
     
-
-.nav-menulist.disabled{
+.nav-menulist.disabled {
    cursor: default;
 }
 
-.nav-menulist.currentPage{
+.nav-menulist.currentPage {
     background-color: #0263B5;
 }
 
-.nav-menulist a{
+.nav-menulist a {
     text-decoration:none;
 }
 
-.nav-menulist a:link{
+.nav-menulist a:link {
     color: #FFFFFF;
 }
 
-.nav-menulist a:visited{
+.nav-menulist a:visited {
     color: #FFFFFF;
 }
 
 .nav-menulist a:hover{}
 
 
-.dropdown-content{
+.dropdown-content {
     display: none;
     position: absolute;
     min-width: 100px;
@@ -213,23 +211,23 @@ div[class^="header-"]{
     
 }
 
-.lecture h2{
+.lecture h2 {
     position: absolute;
     top: 175px;
     margin-left: 25px;
 }
 
-.lecture ul{
+.lecture ul {
     list-style-type: none;    
     position: absolute;
     top: 235px;
 }
 
-.lecture li{
+.lecture li {
     font-size: .9em;
 }
 
-.lecture li, a{
+.lecture li, a {
     color: #000;
     text-decoration: none;    
 }
@@ -264,7 +262,7 @@ div[class^="header-"]{
 
 /* About - by Paulo Leao*/
 
-.about{
+.about {
     width: 80%;
     margin: 0 auto;
     padding-left: 30px;
@@ -272,31 +270,31 @@ div[class^="header-"]{
     padding-bottom: 10px;
 }
 
-.about-course-goals > li{
+.about-course-goals > li {
     padding: 4px 0;
 }
 
-.about-course-outcomes > li{
+.about-course-outcomes > li {
     padding: 4px 0;
 }
 
-.about-evaluation-table{
+.about-evaluation-table {
     min-width: 600px;
 }
 
-.about-evaluation-table-header{
+.about-evaluation-table-header {
     min-width: 200px;
     margin: 0px;
 }
 
-.about-evaluation-table-header > th{
+.about-evaluation-table-header > th {
     text-align: center;
     background-color: #1061A6;
     color: #FFFFFF;
     padding: 20px 0;
 }
 
-.about-evaluation-table-datarow > td{
+.about-evaluation-table-datarow > td {
     padding: 10px 30px;
 }
 
@@ -313,21 +311,21 @@ div[class^="header-"]{
     text-align: center;
 }
 
-.footer-social-network{
+.footer-social-network {
     display: inline-block;
 }
 
-.footer-menu{
+.footer-menu {
     display: inline-block;
 }
 
-.footer-menulist{
+.footer-menulist {
     display: inline-block;
     list-style: none;
     margin: 0 20px;
 }
 
-.footer-menulist a:hover{
+.footer-menulist a:hover {
     color: #388ED6;
 }
 
@@ -337,15 +335,15 @@ div[class^="header-"]{
 
 /*Sprite Configuration*/
 .social-icons {
-    background-image:url(/students/bsadoway/final/assets/images/spritesheet.png);
+    background-image: url(/students/bsadoway/final/assets/images/spritesheet.png);
     background-repeat: no-repeat;
     display: inline-block;
-    vertical-align:middle;
+    vertical-align: middle;
 }
 
 .social-header{
     display: inline-block;
-    background-image:none;
+    background-image: none;
 }
 
 .facebook {
@@ -369,18 +367,19 @@ div[class^="header-"]{
 /* ------ Profile style ------*/
 
 
-.ir-header{
+.ir-header {
     text-align: center;
 }
 
-.profiles{
+.profiles {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
     list-style: none;
     min-width: 1180px;
 }
-.profiles li{
+
+.profiles li {
     float: left;
     margin-left: 40px;
     margin-right: 40px;
@@ -391,20 +390,20 @@ div[class^="header-"]{
     box-shadow: 10px 10px 21px -12px rgba(0,0,0,0.75);
 }
 
-.profiles figcaption{
+.profiles figcaption {
     text-align: center;
 }
 
-.worked-content-list li{
+.worked-content-list li {
     float: none;
 }
 
 /* ------ ID's Selectors ------ */
 
-#introduction-div{
+#introduction-div {
     height: 600px;
 }
 
-#rationale-div{
+#rationale-div {
     height: 600px;
 }
