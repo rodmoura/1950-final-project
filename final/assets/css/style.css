@@ -15,13 +15,7 @@ html, body {
 }
 
 header {
-<<<<<<< HEAD
-    position: relative;
-    height: 78px;
-    /*background-color: aqua;*/
-=======
-    height: 150px;    
->>>>>>> 03a7c4123eb646c999ebfdd17f8c1648213eb138
+    height: 150px;
 }
 
 nav {
