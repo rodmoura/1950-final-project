@@ -4,7 +4,7 @@ $(document).ready(function (){
 	$(window).scroll(function (){
 		
         // Height of the header
-		$heightOfHeader = 150; 
+		$heightOfHeader = 79; 
         
         // detect if the user is at the top of the page...
 		if($(window).scrollTop() <= $heightOfHeader) {			
