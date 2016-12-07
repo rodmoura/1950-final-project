@@ -182,7 +182,9 @@ div[class^="header-"]{
 }
 
 
-
+.lecture-exit{
+    visibility: hidden;
+}
 
 
 /* ------ Header / Navigation Section - End ------ */
