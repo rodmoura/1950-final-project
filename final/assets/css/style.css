@@ -356,4 +356,36 @@ div[class^="header-"]{
     background-position: -89px -5px;
 }
 
+/* ------ Profile style ------*/
+
+
+.profiles-header{
+    text-align: center;
+}
+
+.profiles{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    min-width: 1180px;
+}
+.profiles li{
+    float: left;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.profiles li img{
+    border-radius: 50%;
+}
+
+.profiles figcaption{
+    text-align: center;
+}
+
+.worked-content-list li{
+    float: none;
+}
+
 /* ------ ID's Selectors ------ */
