@@ -4,5 +4,6 @@ $(document).ready(function(){
         $("footer").css("display","block");
         $(".nav-menulist").css("display","inline-block");
         $(".lecture-exit").css("visibility","hidden");
+        $(".nav-menulist a").css("font-size","15px"); 
     });
 });
