@@ -18,7 +18,7 @@
         font-family: 'Verdana', sans-serif;
     }
     
-    header, footer {
+    header, nav, footer {
         display: none;
     }
         

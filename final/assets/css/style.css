@@ -15,7 +15,7 @@ html, body {
 }
 
 header {
-    height: 150px;
+    height: 79px;
 }
 
 nav {
@@ -42,7 +42,7 @@ h1, h2, h3 {
 
 main {
     position: relative;
-    min-height: calc(100vh - 307px);
+    min-height: calc(100vh - 236px);
     background-color: #f3f3f3;
 }
 
@@ -75,7 +75,6 @@ footer {
 div[class^="header-"]{
     display: inline-block;
     vertical-align: top;
-    margin-bottom: -1px;
 }
 
 .header-logo{
@@ -100,14 +99,15 @@ div[class^="header-"]{
 
 .header-tile{
     text-align: center;
-    width: 80%;
-    padding: 20px;
+    width: 73%;
+    padding: 20px 0px;
     font-size: 1.8em;
     color: #044E8C;
 }
 
 .header-webComponents img{
     display: block;
+    padding: 2px 0px;
     margin: 0 auto;    
 }
 
@@ -356,6 +356,38 @@ div[class^="header-"]{
     width: 32px;
     height: 32px;
     background-position: -89px -5px;
+}
+
+/* ------ Profile style ------*/
+
+
+.profiles-header{
+    text-align: center;
+}
+
+.profiles{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    min-width: 1180px;
+}
+.profiles li{
+    float: left;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.profiles li img{
+    border-radius: 50%;
+}
+
+.profiles figcaption{
+    text-align: center;
+}
+
+.worked-content-list li{
+    float: none;
 }
 
 /* ------ ID's Selectors ------ */
