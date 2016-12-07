@@ -84,7 +84,7 @@ div[class^="header-"]{
     padding: 1.2em;
     font-size: 1.5em;
     background-color:rgba(16, 97, 166, 1);
-    color: white;
+    color: #FFFFFF;
     font-weight: bolder;
 }
 
@@ -147,11 +147,11 @@ div[class^="header-"]{
 }
 
 .nav-menulist a:link{
-    color: white;
+    color: #FFFFFF;
 }
 
 .nav-menulist a:visited{
-    color: white;
+    color: #FFFFFF;
 }
 
 .nav-menulist a:hover{}
@@ -234,10 +234,14 @@ div[class^="header-"]{
     text-decoration: none;    
 }
 
+.lecture-content, .exercise-content {
+    background-color: #FFFFFF;
+}
+
 /* Coding style */
 
 .code-syntax {
-    background-color: #F7F7F7;                
+    background-color: #F3F3F3;                
     padding: 8px;
 } 
 
@@ -288,7 +292,7 @@ div[class^="header-"]{
 .about-evaluation-table-header > th{
     text-align: center;
     background-color: rgba(16, 97, 166, 1);
-    color: white;
+    color: #FFFFFF;
     padding: 20px 0;
 }
 
@@ -299,7 +303,7 @@ div[class^="header-"]{
 /* Footer - by Paulo Leao*/
 
 .footer-container *{
-    color: white;
+    color: #FFFFFF;
 }
 
 
