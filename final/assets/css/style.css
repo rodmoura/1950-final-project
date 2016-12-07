@@ -16,6 +16,7 @@ html, body {
 
 header {
     height: 79px;
+    min-width: 1180px;
 }
 
 nav {
