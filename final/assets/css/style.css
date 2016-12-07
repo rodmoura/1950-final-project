@@ -75,7 +75,6 @@ footer {
 div[class^="header-"]{
     display: inline-block;
     vertical-align: top;
-    margin-bottom: -1px;
 }
 
 .header-logo{
