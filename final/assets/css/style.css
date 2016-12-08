@@ -418,6 +418,10 @@ figure {
     text-align: center;
 }
 
+#page-not-found > h2 {
+    text-align: center;
+}
+
 /* Page Not Found image */
 #error-404 {
     display: block;
