@@ -7,8 +7,9 @@
 # 2 - AddHandler	assigns which file extensions will be processed for SSIs
 # 3 - Options		enables SSIs, and allows this .htaccess file to apply to all subfolders
 
-AddType text/html .shtml
+AddType text/html .shtml .html
 AddHandler server-parsed .html
 AddHandler server-parsed .shtml
 Options Indexes FollowSymLinks Includes
-DirectoryIndex index.shtml index.html 
+DirectoryIndex index.shtml index.html
+ErrorDocument 404 /students/bsadoway/final/page-not-found.html
